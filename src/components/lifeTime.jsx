@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Row, Col, Card } from "antd";
 import { Typography } from "antd";
+import zxx12 from '../images/zxx-1-2.jpg'
 const { Title } = Typography;
+
+const imageUrl = 'src'
 
 class LifeTime extends Component {
   constructor(props) {
@@ -105,7 +108,7 @@ class LifeTime extends Component {
             xl={20}
           >
            <img style={{width:'100%'}}
-           src='/images/zxx-1-2.jpg'
+           src={zxx12}
            >
            </img>
           </Col>

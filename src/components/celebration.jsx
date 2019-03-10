@@ -5,6 +5,8 @@ import history from "../history";
 import cake from "../images/cake.svg";
 import { Typography } from "antd";
 const { Title } = Typography;
+const baseUrl = process.env.PUBLIC_URL;
+const imageUrl = 'src'
 class Celebration extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +18,7 @@ class Celebration extends Component {
     history.push("/");
   }
   toGallary(e) {
-    history.push("/gallary");
+    history.push(baseUrl + "/gallary");
   }
   render() {
     return (
@@ -28,7 +30,7 @@ class Celebration extends Component {
         </Row>
         <Row type="flex" justify="space-around" align="middle">
           <Col xs={20} sm={16} md={12} lg={8} xl={8}>
-            <img src="/images/cake.svg" />
+            <img src={cake} />
           </Col>
         </Row>
         <Row type="flex" justify="space-around" align="middle">

@@ -9,16 +9,17 @@ import Celebration from "./components/celebration";
 import Gallary from "./components/gallary"
 import history from "./history";
 import LiftTime from './components/lifeTime'
+const baseUrl = process.env.PUBLIC_URL;
 class App extends Component {
   render() {
     return (
       <Router history={history}>
 
           <div>
-            <Route path="/" exact component={Entry} />
-            <Route path="/celebration" component={Celebration} />
-            <Route path="/gallary" component={Gallary} />
-            <Route path="/lifetime" component={LiftTime} />
+            <Route path= {baseUrl + "/"} exact component={Entry} />
+            <Route path={baseUrl + "/celebration" }component={Celebration} />
+            <Route path={baseUrl + "/gallary" }component={Gallary} />
+            <Route path={baseUrl + "/lifetime"} component={LiftTime} />
           </div>
 
       </Router>

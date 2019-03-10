@@ -2,9 +2,19 @@ import React, { Component } from "react";
 import Button from "antd/lib/button";
 import { Row, Col, Card } from "antd";
 import history from "../history";
-import cake from "../images/cake.svg";
+import zxx1 from '../images/zxx-1.jpg'
+import zxx2 from '../images/zxx-2.jpg'
+import zxx3 from '../images/zxx-3.jpg'
+import zxx4 from '../images/zxx-4.jpg'
+import zxx5 from '../images/zxx-5.jpg'
+import zxx6 from '../images/zxx-6.jpg'
+import zxx7 from '../images/zxx-7.jpg'
+import zxx8 from '../images/zxx-8.jpg'
+import zxx9 from '../images/zxx-9.jpg'
 import { Typography } from "antd";
 const { Title } = Typography;
+const baseUrl = process.env.PUBLIC_URL;
+const imageUrl = 'src'
 class Gallary extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +24,7 @@ class Gallary extends Component {
   toLiftTime(e){
     console.log('to');
     
-    history.push('/lifetime')
+    history.push(baseUrl+'/lifetime')
   }
   render() {
     return (
@@ -44,7 +54,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-1.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx1} alt="" />
             </Card>
           </Col>
           <Col
@@ -62,7 +72,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-2.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx2} alt="" />
             </Card>
           </Col>
 
@@ -81,7 +91,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-3.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx3} alt="" />
             </Card>
           </Col>
         </Row>
@@ -101,7 +111,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-4.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx4} alt="" />
             </Card>
           </Col>
           <Col
@@ -119,7 +129,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-5.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx5} alt="" />
             </Card>
           </Col>
 
@@ -138,7 +148,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-6.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx6} alt="" />
             </Card>
           </Col>
         </Row>
@@ -158,7 +168,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-7.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx7} alt="" />
             </Card>
           </Col>
           <Col
@@ -176,7 +186,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-8.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx8} alt="" />
             </Card>
           </Col>
 
@@ -195,7 +205,7 @@ class Gallary extends Component {
                 alignItems: "center"
               }}
             >
-              <img style={{width:'100%'}} src="/images/zxx-9.jpg" alt="" />
+              <img style={{width:'100%'}} src={zxx9} alt="" />
             </Card>
           </Col>
         </Row>

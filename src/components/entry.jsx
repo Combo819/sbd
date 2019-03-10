@@ -3,7 +3,7 @@ import Button from "antd/lib/button";
 import logo from "../logo.svg";
 import history from "../history";
 import { Row, Col, Card, Progress } from "antd";
-
+const baseUrl = process.env.PUBLIC_URL;
 class Entry extends Component {
   constructor(props) {
     super(props);
@@ -38,7 +38,7 @@ class Entry extends Component {
             duration: 0,
             cardVisible: true
         })
-        history.push("/celebration");
+        history.push( baseUrl +"/celebration");
         
       }, 3000)
     });
