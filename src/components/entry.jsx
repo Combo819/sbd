@@ -72,7 +72,6 @@ class Entry extends Component {
     return (
       <div
         style={{
-          border: "1px solid",
           height: 600,
           display: "flex",
           justifyContent: "center",
@@ -90,8 +89,8 @@ class Entry extends Component {
               onMouseUp={e=>this.touchEnd(e)}
               hoverable
               style={{
-                width: 240,
-                height: 300,
+                width: 280,
+                height: 350,
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center"
@@ -102,7 +101,6 @@ class Entry extends Component {
                   style={{
                     color: "grey",
                     textAlign: "center",
-                    border: "1px solid black",
                     userSelect: "none"
                   }}
                 >
